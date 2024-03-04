@@ -1,8 +1,17 @@
-body {
+.fondoDia {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background-image: url("../imgs/general/fondoDia.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fondoNoche {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-image: url("../imgs/general/fondoNoche.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
