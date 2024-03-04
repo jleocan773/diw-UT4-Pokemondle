@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Contacto </title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="icon" type="image/png" href="assets/imgs/general/iconoBlanco.png">
+    <script src="./assets/scripts/contacto.js"></script>
+</head>
+
+<body>
+    <include src="./views/header.html"></include>
+
+    <form class="zonaFormulario">
+
+        <h1 class="tituloFormulario">Contacto</h1>
+
+        <div class="formularioContacto__NombreYEmail">
+            <div class="NombreYEmail">
+                <label class="label__nombre" for="nombre" id="label__nombre">Nombre</label>
+                <input class="input__nombre" type="text" name="input__nombre" id="input__nombre"
+                    placeholder="Introduzca su nombre">
+            </div>
+            <div class="NombreYEmail">
+                <label class="label__email" for="email" id="label__email">Email</label>
+                <input class="input__email" type="email" name="input__email" id="input__email"
+                    placeholder="Introduzca su correo">
+            </div>
+        </div>
+
+        <div class="formularioContacto__tipoSolicitud ">
+            <label class="label__tipoSolicitud" for="tipoSolicitud" id="label__tipoSolicitud">Tipo de
+                Solicitud</label>
+            <select class="select__tipoSolicitud" name="select__tipoSolicitud" id="select__tipoSolicitud">
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="sugerencias">Sugerencias</option>
+                <option value="preguntas">Preguntas</option>
+                <option value="problemas">Informar de un problema</option>
+                <option value="recuperacion">Problemas con la cuenta</option>
+            </select>
+        </div>
+
+        <div class="formularioContacto__asunto">
+            <label class="label__asunto" for="asunto" id="label__asunto">Asunto</label>
+            <input class="input__asunto" type="text" name="input__asunto" id="input__asunto"
+                placeholder="Asunto de la consulta"></input>
+        </div>
+
+        <div class="formularioContacto__detalles">
+            <label class="label__detalles" for="label__detalles" id="label__detalles">Detalles</label>
+            <textarea class="input__detalles" type="text" name="input__detalles" id="input__detalles"
+                placeholder="Escriba aquí los detalles de su consulta"></textarea>
+        </div>
+
+        <div class="botonContainer">
+            <button class="botonEnviar">Enviar</button>
+        </div>
+
+        <div class="iconosSociales">
+            <a href="https://twitter.com/" target="_blank">
+                <img class="iconoTwitter" src="assets/imgs/socials/icon-twitter.png" alt="iconoTwitter" tabindex="0">
+            </a>
+
+            <a href="https://facebook.com/" target="_blank">
+                <img class="iconoFacebook" src="assets/imgs/socials/icon-facebook.png" alt="iconoFacebook" tabindex="0">
+            </a>
+
+            <a href="https://instagram.com/" target="_blank">
+                <img class="iconoInstagram" src="assets/imgs/socials/icon-instagram.png" alt="iconoInstagram"
+                    tabindex="0">
+            </a>
+        </div>
+
+    </form>
+
+    <include src="./views/footer.html"></include>
+</body>
+
+</html>

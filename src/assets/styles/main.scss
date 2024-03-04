@@ -1,0 +1,23 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import variables
+ */
+
+@import "variables";
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+ @import "layouts/index";
+ @import "layouts/contacto";
+ @import "layouts/footer";
+ @import "layouts/header";
+ 
+/**
+ * Do NOT include anything else in this file!
+ */

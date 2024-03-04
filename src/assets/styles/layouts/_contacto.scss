@@ -1,0 +1,138 @@
+.fondoDia {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-image: url("../imgs/general/fondoDia.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fondoNoche{
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-image: url("../imgs/general/fondoNoche.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.accesibilidad {
+  position: absolute;
+  top: 0;
+  right: 3;
+  width: 100px;
+  cursor: pointer;
+}
+
+.zonaFormulario {
+  grid-column: 5/9;
+  height: 100vh;
+  background-image: url("../imgs/contact/fondoPokedex.png");
+  background-size: 100%;
+
+  font-family: PokeClassic;
+}
+
+.tituloFormulario {
+  text-align: center;
+}
+
+.formularioContacto__NombreYEmail,
+.formularioContacto__tipoSolicitud,
+.formularioContacto__asunto,
+.formularioContacto__detalles {
+  display: flex;
+  padding-left: 3.5em;
+  margin-bottom: 0.3em;
+  flex-direction: column;
+}
+
+.formularioContacto__NombreYEmail {
+  display: flex;
+  flex-direction: row;
+  padding-left: 3.5em;
+}
+
+.input__nombre,
+.input__email,
+.select__tipoSolicitud,
+.input__asunto,
+.input__detalles {
+  margin-right: 1em;
+  padding: 0.5em;
+
+  border-radius: 25px;
+  border: 3px solid #000000;
+
+  font-size: 20px;
+}
+
+input:focus {
+  border-color: orange;
+}
+
+textarea:focus {
+  border-color: orange;
+}
+
+.label__nombre,
+.label__email,
+.label__tipoSolicitud,
+.label__asunto,
+.label__detalles {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  display: block;
+
+  font-size: 25px;
+}
+
+.input__email {
+  width: 240px;
+}
+
+.input__detalles {
+  height: 250px;
+}
+
+.botonEnviar {
+  align-self: center;
+}
+
+.botonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.botonEnviar {
+  font-size: 30px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.iconosSociales {
+  margin-left: 3em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.botonEnviar {
+  background-color: #f1c83e;
+  border: 2px solid black;
+  border-radius: 80%;
+  cursor: pointer;
+}
+

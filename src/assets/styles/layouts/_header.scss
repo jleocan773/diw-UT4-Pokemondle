@@ -1,0 +1,28 @@
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings, .language, .accesibilidad {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.logo{
+  cursor: pointer;
+  height: 300px;
+  transition: 0.2s linear;
+}
+
+.accesibilidad {
+  position: absolute;
+  top: 0;
+  right: 3;
+}
+
+.logo:hover, .settings:hover, .language:hover, .accesibilidad:hover {
+  transform: scale(1.05);
+}

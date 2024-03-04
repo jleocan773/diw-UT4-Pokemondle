@@ -1,0 +1,55 @@
+footer {
+  margin: 0;
+  padding-top: 20px;
+  grid-column: 1 / -1;
+  align-self: end;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  background-color: #cf1f36;
+  height: 7.6vh;
+  border-top: 3px solid #150001;
+}
+
+.footer-container img {
+  height: 3.5em;
+  width: 100%;
+}
+
+.redes-sociales {
+  display: flex;
+}
+
+.redes-sociales img {
+  height: 100%;
+  width: 70%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+.footerEnlaceInicio,
+.footerEnlaceContacto,
+.footerEnlacePrivacidad,
+.footerEnlaceFacebook,
+.footerEnlaceTwitter,
+.footerEnlaceInstagram {
+  transition: 0.2s linear;
+}
+
+.footerEnlaceInicio:hover,
+.footerEnlaceContacto:hover,
+.footerEnlacePrivacidad:hover,
+.footerEnlaceFacebook:hover,
+.footerEnlaceTwitter:hover,
+.footerEnlaceInstagram:hover {
+  transform: scale(1.05);
+}
