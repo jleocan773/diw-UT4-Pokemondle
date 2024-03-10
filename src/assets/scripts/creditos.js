@@ -13,13 +13,19 @@ function onIniciar() {
   const hora = new Date().getHours();
   const body = document.querySelector("body");
 
-  if (hora >= 6 && hora < 22) {
+  if (hora >= 6 && hora < 18) {
     //Si la hora es mayor o igual que las 6 de la mañana pero menor que las 6 de la tarde se muestra el fondo de día
     body.classList.add("fondoDia");
   } else {
     //De  lo contrario, se muestra el fondo de noche
     body.classList.add("fondoNoche");
     body.style.color = "#FECA04";
+
+    // Selecciona todos los enlaces y cambia su color a blanco
+    const enlaces = document.querySelectorAll("a");
+    enlaces.forEach((enlace) => {
+      enlace.style.color = "white";
+    });
   }
 
   //Código del Acordeón
